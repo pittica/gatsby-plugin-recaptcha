@@ -1,0 +1,36 @@
+{
+  "name": "@pittica/gatsby-plugin-recaptcha",
+  "private": false,
+  "description": "ReCaptcha component for GatsbyJS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lucio Benini",
+    "email": "info@pittica.com",
+    "url": "https://pittica.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pittica/gatsby-plugin-recaptcha/issues"
+  },
+  "deprecated": false,
+  "homepage": "https://github.com/pittica/gatsby-plugin-recaptcha",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "recaptcha",
+    "security"
+  ],
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "gatsby": "^2.21.22",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pittica/gatsby-plugin-recaptcha.git"
+  }
+}
