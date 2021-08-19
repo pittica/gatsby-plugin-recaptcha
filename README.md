@@ -99,6 +99,13 @@ Badge size.
 
 Validation callback.
 
+#### theme
+
+* Type: **string**
+* Required: **no**
+* Values: **light**, **dark**
+* Default value: **light**
+
 ## Copyright
 
 (c) 2020, Pittaca S.r.l.s.
