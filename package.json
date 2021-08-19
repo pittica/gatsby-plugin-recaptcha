@@ -2,7 +2,7 @@
   "name": "@pittica/gatsby-plugin-recaptcha",
   "private": false,
   "description": "ReCaptcha component for GatsbyJS.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Lucio Benini",
     "email": "info@pittica.com",

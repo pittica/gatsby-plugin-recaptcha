@@ -86,5 +86,6 @@ ReCaptcha.defaultProps = {
   badge: "inline",
   size: "invisible",
   theme: "light",
+  action: "homepage",
   submitted: false,
 }
