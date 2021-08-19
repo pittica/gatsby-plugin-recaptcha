@@ -24,36 +24,37 @@ npm install @pittica/gatsby-plugin-recaptcha
 Import the component classes.
 
 ```javascript
-import ReCaptcha, { Loader } from "@pittica/gatsby-plugin-recaptcha"
+import ReCaptcha from "@pittica/gatsby-plugin-recaptcha"
 ```
 
-The component works better in _React.Component_ objects.
+Use the component in React functions.
 
 ```javascript
-export default class ContactPage extends React.Component {
-  constructor(props, context) {
-    Loader()
-  }
+import React, { useState } from "react"
 
-  verifyCallback = (token) => {
-  }
+export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false)
 
-  render() {
-    return (
+  const submit = (token) => {}
+
+  return (
+    <div>
       <ReCaptcha
         action="homepage"
-        sitekey="RECAPTCHA_PUBLIC_KEY"
-        callback={this.verifyCallback}
+        siteKey="RECAPTCHA_PUBLIC_KEY"
+        onVerify={(token) => submit(token)}
+        submitted={submitted}
       />
-    )
-  }
+      <button onClick={() => setSubmitted(true)}>Submit</button>
+    </div>
+  )
 }
 ```
 ### Attributes
 
 The components has some attributes.
 
-#### sitekey
+#### siteKey
 
 * Type: **string**
 * Required: **yes**
@@ -64,6 +65,7 @@ ReCaptcha public key.
 
 * Type: **string**
 * Required: **yes**
+* Default value: **homepage**
 
 ReCaptcha action. Common values are _homepage_ or _login_.
 
