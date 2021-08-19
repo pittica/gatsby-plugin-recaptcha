@@ -10,3 +10,5 @@ decls
 examples
 .gitattributes
 gatsby-plugin-recaptcha.code-workspace
+src
+.github

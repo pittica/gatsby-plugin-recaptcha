@@ -2,7 +2,7 @@
   "name": "@pittica/gatsby-plugin-recaptcha",
   "private": false,
   "description": "ReCaptcha component for GatsbyJS.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": {
     "name": "Lucio Benini",
     "email": "info@pittica.com",
@@ -13,19 +13,54 @@
   },
   "deprecated": false,
   "homepage": "https://github.com/pittica/gatsby-plugin-recaptcha",
-  "keywords": [ "gatsby", "gatsby-plugin", "recaptcha", "security" ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "recaptcha",
+    "security"
+  ],
   "dependencies": {
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "react-useinterval": "^1.0.2"
   },
   "devDependencies": {
-    "gatsby": "^2.21.22",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pittica/gatsby-plugin-recaptcha.git"
+  },
+  "config": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "react-scripts test",
+    "prepare": "rimraf ./dist && mkdirp ./dist && babel src --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "edge": "17",
+            "firefox": "60",
+            "chrome": "67",
+            "safari": "11.1"
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ]
   }
 }
