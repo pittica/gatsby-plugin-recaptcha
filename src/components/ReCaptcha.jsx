@@ -20,13 +20,18 @@ export default function ReCaptcha({
   const [ready, setReady] = useState(isReady())
   const [client, setClient] = useState(null)
   const [delay, setDelay] = useState(1000)
-  const canLoad = !ready && client === null
+  const [load, setLoad] = useState(!ready && client === null)
+
+  if (!load) {
+    unloader()
+    setLoad(true)
+  }
 
   useEffect(() => {
-    if (canLoad) {
+    if (load) {
       loader()
     }
-  }, [canLoad])
+  }, [load])
 
   useEffect(() => {
     return () => {
@@ -47,6 +52,12 @@ export default function ReCaptcha({
   }, delay)
 
   const render = () => {
+    try {
+      window.grecaptcha.reset()
+    } catch (ex) {
+      setClient(null)
+    }
+
     const response = window.grecaptcha.render(id, {
       sitekey: siteKey,
       badge,

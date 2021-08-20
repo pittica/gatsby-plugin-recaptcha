@@ -12,3 +12,5 @@ examples
 gatsby-plugin-recaptcha.code-workspace
 src
 .github
+.prettierignore
+.prettierrc
