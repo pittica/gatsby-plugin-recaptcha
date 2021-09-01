@@ -110,4 +110,4 @@ Validation callback.
 
 ## Copyright
 
-(c) 2020-2021, Pittaca S.r.l.s.
+(c) 2020-2021, [Pittica S.r.l.s.](https://pittica.com).
