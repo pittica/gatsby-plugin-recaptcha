@@ -14,6 +14,7 @@ This plugin has been developed using [GatsbyJS](https://www.gatsbyjs.org/) tutor
 ## Install
 
 [![npm](https://img.shields.io/npm/v/@pittica/gatsby-plugin-recaptcha)](https://www.npmjs.com/package/@pittica/gatsby-plugin-recaptcha)
+[![npm](https://img.shields.io/npm/dm/@pittica/gatsby-plugin-recaptcha)](https://www.npmjs.com/package/@pittica/gatsby-plugin-recaptcha)
 
 ```shell
 npm install @pittica/gatsby-plugin-recaptcha
@@ -110,4 +111,4 @@ Validation callback.
 
 ## Copyright
 
-(c) 2020-2021, [Pittica S.r.l.s.](https://pittica.com).
+(c) 2020-2021, [Pittica S.r.l.](https://pittica.com).
