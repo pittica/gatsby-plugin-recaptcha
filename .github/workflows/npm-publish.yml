@@ -35,8 +35,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: CI
         run: npm ci
-      - name: Build
-        run: npm run build
       - name: Publish
         run: npm publish --access public
         env:
@@ -56,8 +54,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: CI
         run: npm ci
-      - name: Build
-        run: npm run build
       - name: Publish
         run: npm publish --access public
         env:
