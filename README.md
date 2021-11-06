@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/github/license/pittica/gatsby-plugin-recaptcha)
 ![Version](https://img.shields.io/github/package-json/v/pittica/gatsby-plugin-recaptcha)
 ![Release](https://img.shields.io/github/v/release/pittica/gatsby-plugin-recaptcha)
-![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/pittica/gatsby-plugin-recaptcha/react)
+![React version](https://img.shields.io/github/package-json/dependency-version/pittica/gatsby-plugin-recaptcha/react)
 
 ## Description
 
