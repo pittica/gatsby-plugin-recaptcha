@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "babel-preset-gatsby-package": "^2.0.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^5.0.1"
   },
   "peerDependencies": {
     "gatsby": "^3.0.0 || ^4.0.0"
